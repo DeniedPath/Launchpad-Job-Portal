@@ -40,4 +40,10 @@ jobs:
       - name: Deploy to VPS
         if: github.ref == 'refs/heads/main'
         run: |
-          ssh xlpuser1@${{ secrets.SERVER_IP }} "cd ${{ secrets.PROJECT_PATH }} && git pull && pnpm install && pnpm build && pm2 restart ecosystem.config.js"
+          ssh xlpuser1@${{ secrets.SERVER_IP }} << 'EOF'
+            cd ${{ secrets.PROJECT_PATH }} || { echo "Failed to change directory"; exit 1; }
+            git pull || { echo "Failed to pull latest code"; exit 1; }
+            pnpm install || { echo "Failed to install dependencies"; exit 1; }
+            pnpm build || { echo "Failed to build project"; exit 1; }
+            pm2 restart ecosystem.config.js || { echo "Failed to restart application"; exit 1; }
+          EOF
