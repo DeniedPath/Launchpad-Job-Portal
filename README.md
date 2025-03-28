@@ -7,7 +7,6 @@ To complete this project, we are relying on the following technologies:
 - MongoDB
 
 # Credits and Attributions
-Project is being worked on by Team LP and at the end of statement of work will be transferred to Faculty Advisor as requested by Client.
-
+Project is being worked on by Team LP and, at the end of the statement of work, will be transferred to the Faculty Advisor as requested by the client.
 # Future Implementation
 When this project is completed, documentation will be properly added.
