@@ -3,7 +3,7 @@ Active Work in Progress project being created on behalf of Launchpad Philly.
 
 # Tech Stack
 To complete this project, we are relying on the following technologies:
-- Next.JS
+- Next.js
 - MongoDB
 
 # Credits and Attributions
