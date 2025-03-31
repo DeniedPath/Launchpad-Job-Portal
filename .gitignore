@@ -134,3 +134,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS Finder files
+Icon?
+._*
+
+# macOS resource fork files
+.Spotlight-V100
+.Trashes
